@@ -1,0 +1,6 @@
+{
+    "Perro": ["Labrador Retriever", "Bulldog", "Caniche", "Dóberman"],
+    "Gato": ["Siames", "Persa", "Bengala", "Ragdoll"],
+    "Ave": ["Canario", "Perico", "Cotorra"],
+    "Conejo": ["Holland Lop", "Mini Rex", "Cabeza de León"]
+  }

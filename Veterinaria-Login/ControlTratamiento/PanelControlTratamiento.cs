@@ -8,5 +8,31 @@ namespace Veterinaria_Login.ControlTratamiento
         {
             InitializeComponent();
         }
+
+        private void AddTrat_Click(object sender, System.EventArgs e)
+        {
+            AñadirTratamiento addtrat = new AñadirTratamiento();
+            Controls.Add(addtrat);
+            addtrat.BringToFront();
+        }
+
+        private void ElimTrat_Click(object sender, System.EventArgs e)
+        {
+            EliminarTratamiento elimtrat = new EliminarTratamiento();
+            Controls.Add(elimtrat);
+            elimtrat.BringToFront();
+        }
+
+        private void EditTrat_Click(object sender, System.EventArgs e)
+        {
+            EditarTratamiento editrat = new EditarTratamiento();
+            Controls.Add(editrat);
+            editrat.BringToFront();
+        }
+
+        private void QuitTrat_Click(object sender, System.EventArgs e)
+        {
+            Controls.Clear();
+        }
     }
 }

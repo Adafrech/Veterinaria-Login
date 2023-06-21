@@ -342,6 +342,12 @@
     <Compile Include="ControlTratamiento\AñadirTratamiento .Designer.cs">
       <DependentUpon>AñadirTratamiento .cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlHistorial\PanelHistorial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlHistorial\PanelHistorial.Designer.cs">
+      <DependentUpon>PanelHistorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,8 +404,17 @@
     <EmbeddedResource Include="ControlTratamiento\AñadirTratamiento .resx">
       <DependentUpon>AñadirTratamiento .cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ControlTratamiento\EditarTratamiento.resx">
+      <DependentUpon>EditarTratamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTratamiento\EliminarTratamiento.resx">
+      <DependentUpon>EliminarTratamiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlTratamiento\PanelControlTratamiento.resx">
       <DependentUpon>PanelControlTratamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlHistorial\PanelHistorial.resx">
+      <DependentUpon>PanelHistorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioLogin.resx">
       <DependentUpon>InicioLogin.cs</DependentUpon>

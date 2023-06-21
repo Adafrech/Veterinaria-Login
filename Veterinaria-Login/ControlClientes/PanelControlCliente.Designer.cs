@@ -119,7 +119,7 @@
             // 
             this.PictureQuit.BaseColor = System.Drawing.Color.White;
             this.PictureQuit.Image = ((System.Drawing.Image)(resources.GetObject("PictureQuit.Image")));
-            this.PictureQuit.Location = new System.Drawing.Point(444, 77);
+            this.PictureQuit.Location = new System.Drawing.Point(44, 244);
             this.PictureQuit.Name = "PictureQuit";
             this.PictureQuit.Size = new System.Drawing.Size(75, 75);
             this.PictureQuit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,7 +132,7 @@
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaLabel4.Location = new System.Drawing.Point(460, 155);
+            this.gunaLabel4.Location = new System.Drawing.Point(60, 322);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(39, 20);
             this.gunaLabel4.TabIndex = 7;
@@ -142,7 +142,7 @@
             // 
             this.PictureEdit.BaseColor = System.Drawing.Color.White;
             this.PictureEdit.Image = ((System.Drawing.Image)(resources.GetObject("PictureEdit.Image")));
-            this.PictureEdit.Location = new System.Drawing.Point(44, 222);
+            this.PictureEdit.Location = new System.Drawing.Point(459, 77);
             this.PictureEdit.Name = "PictureEdit";
             this.PictureEdit.Size = new System.Drawing.Size(75, 75);
             this.PictureEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,7 +154,7 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(41, 317);
+            this.gunaLabel5.Location = new System.Drawing.Point(456, 172);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(77, 15);
             this.gunaLabel5.TabIndex = 9;

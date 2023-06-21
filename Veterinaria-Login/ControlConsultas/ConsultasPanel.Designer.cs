@@ -28,197 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultasPanel));
-            this.txtDniDueño = new Guna.UI.WinForms.GunaTextBox();
-            this.txtMotivo = new Guna.UI.WinForms.GunaTextBox();
-            this.txtObservacion = new Guna.UI.WinForms.GunaTextBox();
+            this.PicQuit = new Guna.UI.WinForms.GunaPictureBox();
+            this.EditConsul = new Guna.UI.WinForms.GunaPictureBox();
+            this.DelConsul = new Guna.UI.WinForms.GunaPictureBox();
+            this.AddConsul = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.txtMascota = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.lblTime = new Guna.UI.WinForms.GunaLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.PictureConsultas = new Guna.UI.WinForms.GunaPictureBox();
-            this.lblDate = new Guna.UI.WinForms.GunaLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureConsultas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicQuit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditConsul)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DelConsul)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddConsul)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtDniDueño
+            // PicQuit
             // 
-            this.txtDniDueño.BaseColor = System.Drawing.Color.White;
-            this.txtDniDueño.BorderColor = System.Drawing.Color.Silver;
-            this.txtDniDueño.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDniDueño.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtDniDueño.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDniDueño.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtDniDueño.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDniDueño.Location = new System.Drawing.Point(13, 38);
-            this.txtDniDueño.Name = "txtDniDueño";
-            this.txtDniDueño.PasswordChar = '\0';
-            this.txtDniDueño.Size = new System.Drawing.Size(200, 30);
-            this.txtDniDueño.TabIndex = 0;
+            this.PicQuit.BaseColor = System.Drawing.Color.White;
+            this.PicQuit.Image = ((System.Drawing.Image)(resources.GetObject("PicQuit.Image")));
+            this.PicQuit.Location = new System.Drawing.Point(52, 380);
+            this.PicQuit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PicQuit.Name = "PicQuit";
+            this.PicQuit.Size = new System.Drawing.Size(112, 115);
+            this.PicQuit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicQuit.TabIndex = 0;
+            this.PicQuit.TabStop = false;
+            this.PicQuit.Click += new System.EventHandler(this.PicQuit_Click);
             // 
-            // txtMotivo
+            // EditConsul
             // 
-            this.txtMotivo.BaseColor = System.Drawing.Color.White;
-            this.txtMotivo.BorderColor = System.Drawing.Color.Silver;
-            this.txtMotivo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMotivo.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMotivo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtMotivo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMotivo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMotivo.Location = new System.Drawing.Point(13, 120);
-            this.txtMotivo.Name = "txtMotivo";
-            this.txtMotivo.PasswordChar = '\0';
-            this.txtMotivo.Size = new System.Drawing.Size(200, 30);
-            this.txtMotivo.TabIndex = 3;
+            this.EditConsul.BaseColor = System.Drawing.Color.White;
+            this.EditConsul.Image = ((System.Drawing.Image)(resources.GetObject("EditConsul.Image")));
+            this.EditConsul.Location = new System.Drawing.Point(652, 63);
+            this.EditConsul.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EditConsul.Name = "EditConsul";
+            this.EditConsul.Size = new System.Drawing.Size(112, 115);
+            this.EditConsul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EditConsul.TabIndex = 1;
+            this.EditConsul.TabStop = false;
+            this.EditConsul.Click += new System.EventHandler(this.EditConsul_Click);
             // 
-            // txtObservacion
+            // DelConsul
             // 
-            this.txtObservacion.BaseColor = System.Drawing.Color.White;
-            this.txtObservacion.BorderColor = System.Drawing.Color.Silver;
-            this.txtObservacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtObservacion.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtObservacion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtObservacion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtObservacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtObservacion.Location = new System.Drawing.Point(325, 120);
-            this.txtObservacion.MultiLine = true;
-            this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.PasswordChar = '\0';
-            this.txtObservacion.Size = new System.Drawing.Size(200, 197);
-            this.txtObservacion.TabIndex = 4;
+            this.DelConsul.BaseColor = System.Drawing.Color.White;
+            this.DelConsul.Image = ((System.Drawing.Image)(resources.GetObject("DelConsul.Image")));
+            this.DelConsul.Location = new System.Drawing.Point(344, 63);
+            this.DelConsul.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DelConsul.Name = "DelConsul";
+            this.DelConsul.Size = new System.Drawing.Size(112, 115);
+            this.DelConsul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DelConsul.TabIndex = 2;
+            this.DelConsul.TabStop = false;
+            this.DelConsul.Click += new System.EventHandler(this.DelConsul_Click);
+            // 
+            // AddConsul
+            // 
+            this.AddConsul.BaseColor = System.Drawing.Color.White;
+            this.AddConsul.Image = ((System.Drawing.Image)(resources.GetObject("AddConsul.Image")));
+            this.AddConsul.Location = new System.Drawing.Point(52, 63);
+            this.AddConsul.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddConsul.Name = "AddConsul";
+            this.AddConsul.Size = new System.Drawing.Size(112, 115);
+            this.AddConsul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AddConsul.TabIndex = 3;
+            this.AddConsul.TabStop = false;
+            this.AddConsul.Click += new System.EventHandler(this.AddConsul_Click);
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(10, 20);
+            this.gunaLabel1.Location = new System.Drawing.Point(38, 195);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(63, 15);
-            this.gunaLabel1.TabIndex = 10;
-            this.gunaLabel1.Text = "Dni Dueño";
-            // 
-            // txtMascota
-            // 
-            this.txtMascota.BaseColor = System.Drawing.Color.White;
-            this.txtMascota.BorderColor = System.Drawing.Color.Silver;
-            this.txtMascota.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMascota.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMascota.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtMascota.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMascota.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMascota.Location = new System.Drawing.Point(325, 38);
-            this.txtMascota.Name = "txtMascota";
-            this.txtMascota.PasswordChar = '\0';
-            this.txtMascota.Size = new System.Drawing.Size(200, 30);
-            this.txtMascota.TabIndex = 2;
+            this.gunaLabel1.Size = new System.Drawing.Size(146, 25);
+            this.gunaLabel1.TabIndex = 5;
+            this.gunaLabel1.Text = "Añadir Consultas";
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(322, 20);
+            this.gunaLabel2.Location = new System.Drawing.Point(328, 195);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(52, 15);
-            this.gunaLabel2.TabIndex = 11;
-            this.gunaLabel2.Text = "Mascota";
+            this.gunaLabel2.Size = new System.Drawing.Size(156, 25);
+            this.gunaLabel2.TabIndex = 6;
+            this.gunaLabel2.Text = "Eliminar Consultas";
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(10, 102);
+            this.gunaLabel3.Location = new System.Drawing.Point(642, 195);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(45, 15);
-            this.gunaLabel3.TabIndex = 12;
-            this.gunaLabel3.Text = "Motivo";
+            this.gunaLabel3.Size = new System.Drawing.Size(139, 25);
+            this.gunaLabel3.TabIndex = 7;
+            this.gunaLabel3.Text = "Editar Consultas";
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(322, 102);
+            this.gunaLabel4.Location = new System.Drawing.Point(82, 503);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(73, 15);
-            this.gunaLabel4.TabIndex = 13;
-            this.gunaLabel4.Text = "Observación";
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblTime.Location = new System.Drawing.Point(10, 192);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(0, 15);
-            this.lblTime.TabIndex = 14;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // PictureConsultas
-            // 
-            this.PictureConsultas.BaseColor = System.Drawing.Color.White;
-            this.PictureConsultas.Image = ((System.Drawing.Image)(resources.GetObject("PictureConsultas.Image")));
-            this.PictureConsultas.Location = new System.Drawing.Point(19, 263);
-            this.PictureConsultas.Name = "PictureConsultas";
-            this.PictureConsultas.Size = new System.Drawing.Size(54, 54);
-            this.PictureConsultas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureConsultas.TabIndex = 15;
-            this.PictureConsultas.TabStop = false;
-            this.PictureConsultas.Click += new System.EventHandler(this.PictureConsultas_Click);
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblDate.Location = new System.Drawing.Point(16, 206);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(0, 15);
-            this.lblDate.TabIndex = 16;
+            this.gunaLabel4.Size = new System.Drawing.Size(45, 25);
+            this.gunaLabel4.TabIndex = 8;
+            this.gunaLabel4.Text = "Salir";
             // 
             // ConsultasPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(221)))));
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.PictureConsultas);
-            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.txtObservacion);
-            this.Controls.Add(this.txtMotivo);
-            this.Controls.Add(this.txtMascota);
-            this.Controls.Add(this.txtDniDueño);
+            this.Controls.Add(this.AddConsul);
+            this.Controls.Add(this.DelConsul);
+            this.Controls.Add(this.EditConsul);
+            this.Controls.Add(this.PicQuit);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ConsultasPanel";
-            this.Size = new System.Drawing.Size(650, 410);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureConsultas)).EndInit();
+            this.Size = new System.Drawing.Size(975, 631);
+            ((System.ComponentModel.ISupportInitialize)(this.PicQuit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditConsul)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DelConsul)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddConsul)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaTextBox txtDniDueño;
-        private Guna.UI.WinForms.GunaTextBox txtMotivo;
-        private Guna.UI.WinForms.GunaTextBox txtObservacion;
+        private Guna.UI.WinForms.GunaPictureBox PicQuit;
+        private Guna.UI.WinForms.GunaPictureBox EditConsul;
+        private Guna.UI.WinForms.GunaPictureBox DelConsul;
+        private Guna.UI.WinForms.GunaPictureBox AddConsul;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaTextBox txtMascota;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel lblTime;
-        private System.Windows.Forms.Timer timer1;
-        private Guna.UI.WinForms.GunaPictureBox PictureConsultas;
-        private Guna.UI.WinForms.GunaLabel lblDate;
     }
 }

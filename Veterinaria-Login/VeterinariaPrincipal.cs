@@ -41,9 +41,16 @@ namespace Veterinaria_Login
 
         private void btnTratamientos_Click(object sender, System.EventArgs e)
         {
-            Tratamiento ctrltrat = new Tratamiento();
-            PanelPrinc.Controls.Add(ctrltrat);
-            ctrltrat.BringToFront();
+            PanelControlTratamiento tratamiento = new PanelControlTratamiento();
+            PanelPrinc.Controls.Add(tratamiento);
+            tratamiento.BringToFront();
+        }
+
+        private void btnHistorial_Click(object sender, System.EventArgs e)
+        {
+            UserControl hist = new UserControl();
+            PanelPrinc.Controls.Add(hist);
+            hist.BringToFront();
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace Veterinaria_Login.ControlTratamiento
 {
-    public partial class Tratamiento : UserControl
+    public partial class AñadirTratamiento : UserControl
     {
         string connectionString = "Data Source=DESKTOP-SLVGAGD\\SQLEXPRESS;Initial Catalog=Sistema2;Integrated Security=True";
-        public Tratamiento()
+        public AñadirTratamiento()
         {
             InitializeComponent();
         }

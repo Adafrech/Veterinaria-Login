@@ -2,9 +2,9 @@
 
 namespace Veterinaria_Login.ControlTratamiento
 {
-    public partial class Eliminar_Tratamiento : UserControl
+    public partial class EliminarTratamiento : UserControl
     {
-        public Eliminar_Tratamiento()
+        public EliminarTratamiento()
         {
             InitializeComponent();
         }

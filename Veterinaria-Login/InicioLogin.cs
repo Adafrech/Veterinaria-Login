@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Veterinaria_Login
@@ -24,7 +25,7 @@ namespace Veterinaria_Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            /* string user = txtUser.Text;
+            string user = txtUser.Text;
             string pass = txtPass.Text;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -69,53 +70,53 @@ namespace Veterinaria_Login
                 }
             }
 
-            */
+
         }
 
 
         private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
         {
-            /* if (e.KeyChar == Convert.ToChar(Keys.Enter))
-             {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
 
-                 string user = txtUser.Text;
-                 string pass = txtPass.Text;
-                 using (SqlConnection connection = new SqlConnection(connectionString))
-                     try
-                     {
-                         connection.Open();
-                         string query = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @Usuario AND Contraseña = @Contraseña";
-                         VeterinariaPrincipal Panel = new VeterinariaPrincipal();
+                string user = txtUser.Text;
+                string pass = txtPass.Text;
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                    try
+                    {
+                        connection.Open();
+                        string query = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @Usuario AND Contraseña = @Contraseña";
+                        VeterinariaPrincipal Panel = new VeterinariaPrincipal();
 
-                         using (SqlCommand command = new SqlCommand(query, connection))
-                         {
-                             command.Parameters.AddWithValue("@Usuario", user);
-                             command.Parameters.AddWithValue("@Contraseña", pass);
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@Usuario", user);
+                            command.Parameters.AddWithValue("@Contraseña", pass);
 
-                             int count = (int)command.ExecuteScalar();
+                            int count = (int)command.ExecuteScalar();
 
-                             if (count > 0)
-                             {
-                                 DialogResult rdo = MessageBox.Show("Inicio de sesión exitoso");
-                                 connection.Close();
-                                 this.Hide();
-                                 VeterinariaPrincipal veterinaria = new VeterinariaPrincipal();
-                                 veterinaria.Show();
+                            if (count > 0)
+                            {
+                                DialogResult rdo = MessageBox.Show("Inicio de sesión exitoso");
+                                connection.Close();
+                                this.Hide();
+                                VeterinariaPrincipal veterinaria = new VeterinariaPrincipal();
+                                veterinaria.Show();
 
-                             }
-                             else
-                             {
-                                 MessageBox.Show("Nombre de usuario o contraseña incorrectos");
-                                 connection.Close();
-                             }
-                         }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Nombre de usuario o contraseña incorrectos");
+                                connection.Close();
+                            }
+                        }
 
-                     }
-                     catch (Exception ex)
-                     {
-                         MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
-                     }
-             } */
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                    }
+            }
         }
     }
 }

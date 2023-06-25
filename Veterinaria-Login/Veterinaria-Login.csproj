@@ -258,11 +258,11 @@
     <Compile Include="ControlClientes\EditarCliente.Designer.cs">
       <DependentUpon>EditarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlConsultas\AgregarConsultar.cs">
+    <Compile Include="ControlConsultas\AgregarConsultas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ControlConsultas\AgregarConsultar.Designer.cs">
-      <DependentUpon>AgregarConsultar.cs</DependentUpon>
+    <Compile Include="ControlConsultas\AgregarConsultas.Designer.cs">
+      <DependentUpon>AgregarConsultas.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlConsultas\ConsultasPanel.cs">
       <SubType>UserControl</SubType>
@@ -270,11 +270,11 @@
     <Compile Include="ControlConsultas\ConsultasPanel.Designer.cs">
       <DependentUpon>ConsultasPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlConsultas\Editar Consultas.cs">
+    <Compile Include="ControlConsultas\EditarConsultas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ControlConsultas\Editar Consultas.Designer.cs">
-      <DependentUpon>Editar Consultas.cs</DependentUpon>
+    <Compile Include="ControlConsultas\EditarConsultas.Designer.cs">
+      <DependentUpon>EditarConsultas.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlMascotas\AñadirMascota.cs">
       <SubType>UserControl</SubType>
@@ -359,14 +359,14 @@
     <EmbeddedResource Include="ControlClientes\EditarCliente.resx">
       <DependentUpon>EditarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ControlConsultas\AgregarConsultar.resx">
-      <DependentUpon>AgregarConsultar.cs</DependentUpon>
+    <EmbeddedResource Include="ControlConsultas\AgregarConsultas.resx">
+      <DependentUpon>AgregarConsultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlConsultas\ConsultasPanel.resx">
       <DependentUpon>ConsultasPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ControlConsultas\Editar Consultas.resx">
-      <DependentUpon>Editar Consultas.cs</DependentUpon>
+    <EmbeddedResource Include="ControlConsultas\EditarConsultas.resx">
+      <DependentUpon>EditarConsultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlMascotas\AñadirMascota.resx">
       <DependentUpon>AñadirMascota.cs</DependentUpon>

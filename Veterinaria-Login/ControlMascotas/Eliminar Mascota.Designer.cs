@@ -58,7 +58,7 @@
             // 
             this.lblBusquedaDni.AutoSize = true;
             this.lblBusquedaDni.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblBusquedaDni.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblBusquedaDni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.lblBusquedaDni.Location = new System.Drawing.Point(24, 33);
             this.lblBusquedaDni.Name = "lblBusquedaDni";
             this.lblBusquedaDni.Size = new System.Drawing.Size(120, 17);
@@ -148,6 +148,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel1.Location = new System.Drawing.Point(293, 33);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(140, 17);

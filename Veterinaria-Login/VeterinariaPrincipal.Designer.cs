@@ -38,9 +38,16 @@
             this.btnHistorial = new Guna.UI.WinForms.GunaButton();
             this.btnConsultas = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
+            this.btnMax = new Guna.UI.WinForms.GunaPictureBox();
+            this.btnMin = new Guna.UI.WinForms.GunaPictureBox();
+            this.btnExit = new Guna.UI.WinForms.GunaPictureBox();
             this.PanelPrinc = new Guna.UI.WinForms.GunaPanel();
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1.SuspendLayout();
+            this.gunaPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -58,9 +65,8 @@
             this.gunaPanel1.Controls.Add(this.btnConsultas);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(300, 708);
+            this.gunaPanel1.Size = new System.Drawing.Size(200, 460);
             this.gunaPanel1.TabIndex = 0;
             // 
             // btnClientes
@@ -77,8 +83,7 @@
             this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
             this.btnClientes.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnClientes.Location = new System.Drawing.Point(4, 222);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClientes.Location = new System.Drawing.Point(3, 144);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnClientes.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -86,7 +91,7 @@
             this.btnClientes.OnHoverImage = null;
             this.btnClientes.OnPressedColor = System.Drawing.Color.Black;
             this.btnClientes.Radius = 10;
-            this.btnClientes.Size = new System.Drawing.Size(292, 65);
+            this.btnClientes.Size = new System.Drawing.Size(195, 42);
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
@@ -105,8 +110,7 @@
             this.btnTratamientos.ForeColor = System.Drawing.Color.White;
             this.btnTratamientos.Image = ((System.Drawing.Image)(resources.GetObject("btnTratamientos.Image")));
             this.btnTratamientos.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTratamientos.Location = new System.Drawing.Point(4, 498);
-            this.btnTratamientos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTratamientos.Location = new System.Drawing.Point(3, 324);
             this.btnTratamientos.Name = "btnTratamientos";
             this.btnTratamientos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTratamientos.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -114,7 +118,7 @@
             this.btnTratamientos.OnHoverImage = null;
             this.btnTratamientos.OnPressedColor = System.Drawing.Color.Black;
             this.btnTratamientos.Radius = 10;
-            this.btnTratamientos.Size = new System.Drawing.Size(292, 65);
+            this.btnTratamientos.Size = new System.Drawing.Size(195, 42);
             this.btnTratamientos.TabIndex = 5;
             this.btnTratamientos.Text = "Tratamientos";
             this.btnTratamientos.Click += new System.EventHandler(this.btnTratamientos_Click);
@@ -133,8 +137,7 @@
             this.btnMascotas.ForeColor = System.Drawing.Color.White;
             this.btnMascotas.Image = ((System.Drawing.Image)(resources.GetObject("btnMascotas.Image")));
             this.btnMascotas.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnMascotas.Location = new System.Drawing.Point(4, 314);
-            this.btnMascotas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMascotas.Location = new System.Drawing.Point(3, 204);
             this.btnMascotas.Name = "btnMascotas";
             this.btnMascotas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnMascotas.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -142,7 +145,7 @@
             this.btnMascotas.OnHoverImage = null;
             this.btnMascotas.OnPressedColor = System.Drawing.Color.Black;
             this.btnMascotas.Radius = 10;
-            this.btnMascotas.Size = new System.Drawing.Size(292, 65);
+            this.btnMascotas.Size = new System.Drawing.Size(195, 42);
             this.btnMascotas.TabIndex = 3;
             this.btnMascotas.Text = "Mascotas";
             this.btnMascotas.Click += new System.EventHandler(this.btnMascotas_Click);
@@ -161,8 +164,7 @@
             this.btnHistorial.ForeColor = System.Drawing.Color.White;
             this.btnHistorial.Image = ((System.Drawing.Image)(resources.GetObject("btnHistorial.Image")));
             this.btnHistorial.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHistorial.Location = new System.Drawing.Point(4, 591);
-            this.btnHistorial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHistorial.Location = new System.Drawing.Point(3, 384);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnHistorial.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -170,7 +172,7 @@
             this.btnHistorial.OnHoverImage = null;
             this.btnHistorial.OnPressedColor = System.Drawing.Color.Black;
             this.btnHistorial.Radius = 10;
-            this.btnHistorial.Size = new System.Drawing.Size(292, 65);
+            this.btnHistorial.Size = new System.Drawing.Size(195, 42);
             this.btnHistorial.TabIndex = 6;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
@@ -189,8 +191,7 @@
             this.btnConsultas.ForeColor = System.Drawing.Color.White;
             this.btnConsultas.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultas.Image")));
             this.btnConsultas.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnConsultas.Location = new System.Drawing.Point(4, 406);
-            this.btnConsultas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConsultas.Location = new System.Drawing.Point(3, 264);
             this.btnConsultas.Name = "btnConsultas";
             this.btnConsultas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnConsultas.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -198,7 +199,7 @@
             this.btnConsultas.OnHoverImage = null;
             this.btnConsultas.OnPressedColor = System.Drawing.Color.Black;
             this.btnConsultas.Radius = 10;
-            this.btnConsultas.Size = new System.Drawing.Size(292, 65);
+            this.btnConsultas.Size = new System.Drawing.Size(195, 42);
             this.btnConsultas.TabIndex = 4;
             this.btnConsultas.Text = "Consultas";
             this.btnConsultas.Click += new System.EventHandler(this.btnConsultas_Click);
@@ -206,20 +207,55 @@
             // gunaPanel2
             // 
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(162)))), ((int)(((byte)(190)))));
+            this.gunaPanel2.Controls.Add(this.btnMax);
+            this.gunaPanel2.Controls.Add(this.btnMin);
+            this.gunaPanel2.Controls.Add(this.btnExit);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel2.Location = new System.Drawing.Point(300, 0);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaPanel2.Location = new System.Drawing.Point(200, 0);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(975, 77);
+            this.gunaPanel2.Size = new System.Drawing.Size(650, 50);
             this.gunaPanel2.TabIndex = 1;
+            // 
+            // btnMax
+            // 
+            this.btnMax.BaseColor = System.Drawing.Color.White;
+            this.btnMax.Image = ((System.Drawing.Image)(resources.GetObject("btnMax.Image")));
+            this.btnMax.Location = new System.Drawing.Point(568, 12);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.Size = new System.Drawing.Size(25, 24);
+            this.btnMax.TabIndex = 2;
+            this.btnMax.TabStop = false;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
+            // 
+            // btnMin
+            // 
+            this.btnMin.BaseColor = System.Drawing.Color.White;
+            this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
+            this.btnMin.Location = new System.Drawing.Point(613, 12);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(25, 24);
+            this.btnMin.TabIndex = 1;
+            this.btnMin.TabStop = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BaseColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(522, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(25, 24);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // PanelPrinc
             // 
+            this.PanelPrinc.AutoSize = true;
             this.PanelPrinc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.PanelPrinc.Location = new System.Drawing.Point(309, 86);
-            this.PanelPrinc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PanelPrinc.Location = new System.Drawing.Point(206, 56);
             this.PanelPrinc.Name = "PanelPrinc";
-            this.PanelPrinc.Size = new System.Drawing.Size(948, 603);
+            this.PanelPrinc.Size = new System.Drawing.Size(0, 0);
             this.PanelPrinc.TabIndex = 2;
             // 
             // gunaElipse2
@@ -229,22 +265,27 @@
             // 
             // VeterinariaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(199)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1275, 708);
+            this.ClientSize = new System.Drawing.Size(850, 460);
             this.Controls.Add(this.PanelPrinc);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "VeterinariaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.VeterinariaPrincipal_Load);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.VeterinariaPrincipal_MouseMove);
             this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -258,7 +299,10 @@
         private Guna.UI.WinForms.GunaButton btnMascotas;
         private Guna.UI.WinForms.GunaButton btnClientes;
         private Guna.UI.WinForms.GunaButton btnConsultas;
-        private Guna.UI.WinForms.GunaPanel PanelPrinc;
         private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private Guna.UI.WinForms.GunaPictureBox btnMax;
+        private Guna.UI.WinForms.GunaPictureBox btnMin;
+        private Guna.UI.WinForms.GunaPictureBox btnExit;
+        private Guna.UI.WinForms.GunaPanel PanelPrinc;
     }
 }

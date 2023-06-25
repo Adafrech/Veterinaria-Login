@@ -49,9 +49,9 @@
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaLabel4.Location = new System.Drawing.Point(455, 156);
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.gunaLabel4.Location = new System.Drawing.Point(65, 315);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(39, 20);
             this.gunaLabel4.TabIndex = 15;
@@ -61,7 +61,7 @@
             // 
             this.PicExit.BaseColor = System.Drawing.Color.White;
             this.PicExit.Image = ((System.Drawing.Image)(resources.GetObject("PicExit.Image")));
-            this.PicExit.Location = new System.Drawing.Point(439, 78);
+            this.PicExit.Location = new System.Drawing.Point(50, 237);
             this.PicExit.Name = "PicExit";
             this.PicExit.Size = new System.Drawing.Size(75, 75);
             this.PicExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -72,9 +72,9 @@
             // lblMascota
             // 
             this.lblMascota.AutoSize = true;
-            this.lblMascota.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(5)))), ((int)(((byte)(0)))));
-            this.lblMascota.Location = new System.Drawing.Point(25, 156);
+            this.lblMascota.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.lblMascota.Location = new System.Drawing.Point(30, 155);
             this.lblMascota.Name = "lblMascota";
             this.lblMascota.Size = new System.Drawing.Size(116, 20);
             this.lblMascota.TabIndex = 13;
@@ -83,9 +83,9 @@
             // lblEliminarMascota
             // 
             this.lblEliminarMascota.AutoSize = true;
-            this.lblEliminarMascota.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEliminarMascota.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblEliminarMascota.Location = new System.Drawing.Point(219, 156);
+            this.lblEliminarMascota.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblEliminarMascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.lblEliminarMascota.Location = new System.Drawing.Point(430, 155);
             this.lblEliminarMascota.Name = "lblEliminarMascota";
             this.lblEliminarMascota.Size = new System.Drawing.Size(126, 20);
             this.lblEliminarMascota.TabIndex = 12;
@@ -95,7 +95,7 @@
             // 
             this.DelMascota.BaseColor = System.Drawing.Color.White;
             this.DelMascota.Image = ((System.Drawing.Image)(resources.GetObject("DelMascota.Image")));
-            this.DelMascota.Location = new System.Drawing.Point(239, 78);
+            this.DelMascota.Location = new System.Drawing.Point(450, 80);
             this.DelMascota.Name = "DelMascota";
             this.DelMascota.Size = new System.Drawing.Size(75, 75);
             this.DelMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -107,7 +107,7 @@
             // 
             this.AddMascota.BaseColor = System.Drawing.Color.White;
             this.AddMascota.Image = ((System.Drawing.Image)(resources.GetObject("AddMascota.Image")));
-            this.AddMascota.Location = new System.Drawing.Point(39, 78);
+            this.AddMascota.Location = new System.Drawing.Point(50, 80);
             this.AddMascota.Name = "AddMascota";
             this.AddMascota.Size = new System.Drawing.Size(75, 75);
             this.AddMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +120,7 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaLabel1.Location = new System.Drawing.Point(43, 23);
+            this.gunaLabel1.Location = new System.Drawing.Point(48, 22);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(72, 20);
             this.gunaLabel1.TabIndex = 9;
@@ -131,9 +131,9 @@
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(7, 13);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(12, 12);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(35, 35);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 8;
             this.gunaPictureBox1.TabStop = false;
@@ -142,9 +142,9 @@
             // 
             this.PictureEdit.BaseColor = System.Drawing.Color.White;
             this.PictureEdit.Image = ((System.Drawing.Image)(resources.GetObject("PictureEdit.Image")));
-            this.PictureEdit.Location = new System.Drawing.Point(47, 262);
+            this.PictureEdit.Location = new System.Drawing.Point(250, 80);
             this.PictureEdit.Name = "PictureEdit";
-            this.PictureEdit.Size = new System.Drawing.Size(74, 68);
+            this.PictureEdit.Size = new System.Drawing.Size(75, 75);
             this.PictureEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureEdit.TabIndex = 17;
             this.PictureEdit.TabStop = false;
@@ -153,9 +153,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 246);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.label1.Location = new System.Drawing.Point(230, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(110, 20);
             this.label1.TabIndex = 18;
             this.label1.Text = "Editar Mascota";
             // 

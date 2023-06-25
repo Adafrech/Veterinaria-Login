@@ -276,12 +276,6 @@
     <Compile Include="ControlConsultas\Editar Consultas.Designer.cs">
       <DependentUpon>Editar Consultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlConsultas\EliminarConsultas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ControlConsultas\EliminarConsultas.Designer.cs">
-      <DependentUpon>EliminarConsultas.cs</DependentUpon>
-    </Compile>
     <Compile Include="ControlMascotas\AñadirMascota.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -330,12 +324,6 @@
     <Compile Include="ControlTratamiento\EditarTratamiento.Designer.cs">
       <DependentUpon>EditarTratamiento.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlTratamiento\EliminarTratamiento.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ControlTratamiento\EliminarTratamiento.Designer.cs">
-      <DependentUpon>EliminarTratamiento.cs</DependentUpon>
-    </Compile>
     <Compile Include="ControlTratamiento\AñadirTratamiento .cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -380,9 +368,6 @@
     <EmbeddedResource Include="ControlConsultas\Editar Consultas.resx">
       <DependentUpon>Editar Consultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ControlConsultas\EliminarConsultas.resx">
-      <DependentUpon>EliminarConsultas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ControlMascotas\AñadirMascota.resx">
       <DependentUpon>AñadirMascota.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,9 +391,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlTratamiento\EditarTratamiento.resx">
       <DependentUpon>EditarTratamiento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ControlTratamiento\EliminarTratamiento.resx">
-      <DependentUpon>EliminarTratamiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlTratamiento\PanelControlTratamiento.resx">
       <DependentUpon>PanelControlTratamiento.cs</DependentUpon>

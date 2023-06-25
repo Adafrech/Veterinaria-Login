@@ -55,8 +55,8 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaLabel1.Location = new System.Drawing.Point(63, 52);
+            this.gunaLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaLabel1.Location = new System.Drawing.Point(65, 40);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(90, 20);
             this.gunaLabel1.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = null;
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(288, 75);
+            this.btnEliminar.Location = new System.Drawing.Point(28, 136);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -83,16 +83,17 @@
             this.btnEliminar.OnHoverImage = null;
             this.btnEliminar.OnPressedColor = System.Drawing.Color.Black;
             this.btnEliminar.Radius = 15;
-            this.btnEliminar.Size = new System.Drawing.Size(78, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(190, 40);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // PictureReturnCliente
             // 
             this.PictureReturnCliente.BaseColor = System.Drawing.Color.White;
             this.PictureReturnCliente.Image = ((System.Drawing.Image)(resources.GetObject("PictureReturnCliente.Image")));
-            this.PictureReturnCliente.Location = new System.Drawing.Point(509, 297);
+            this.PictureReturnCliente.Location = new System.Drawing.Point(565, 330);
             this.PictureReturnCliente.Name = "PictureReturnCliente";
             this.PictureReturnCliente.Size = new System.Drawing.Size(60, 60);
             this.PictureReturnCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

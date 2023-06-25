@@ -54,18 +54,17 @@ namespace Veterinaria_Login.ControlConsultas
                     }
                     if (!cancelarConsulta)
                     {
-                        string sqlInsertConsulta = "INSERT INTO Consultas (Motivo, Observaciones, DniCliente, Fecha, Hora, MascotaConsul) VALUES (@motivo, @observacion, @dnicliente, @fecha, @hora, @mascotaconsul)";
+                        string sqlInsertConsulta = "INSERT INTO Consultas (Motivo, Observaciones, DniCliente, Fecha, MascotaConsul) VALUES (@motivo, @observacion, @dnicliente, @fecha, @mascotaconsul)";
                         using (SqlCommand command = new SqlCommand(sqlInsertConsulta, connection))
                         {
 
                             DateTime fechaActual = DateTime.Now;
-                            TimeSpan horaActual = fechaActual.TimeOfDay;
+
 
                             command.Parameters.AddWithValue("@motivo", txtMotivo.Text);
                             command.Parameters.AddWithValue("@observacion", txtObservacion.Text);
                             command.Parameters.AddWithValue("@dnicliente", txtDniDueño.Text);
                             command.Parameters.AddWithValue("@fecha", SqlDbType.Date).Value = fechaActual.Date;
-                            command.Parameters.AddWithValue("@hora", SqlDbType.Time).Value = horaActual;
                             command.Parameters.AddWithValue("@mascotaconsul", txtMascota.Text);
                             command.ExecuteNonQuery();
                             MessageBox.Show("Datos insertados correctamente");

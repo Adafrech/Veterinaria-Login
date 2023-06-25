@@ -173,7 +173,7 @@
             // 
             this.InsertarMascotas.BaseColor = System.Drawing.Color.White;
             this.InsertarMascotas.Image = ((System.Drawing.Image)(resources.GetObject("InsertarMascotas.Image")));
-            this.InsertarMascotas.Location = new System.Drawing.Point(17, 304);
+            this.InsertarMascotas.Location = new System.Drawing.Point(438, 330);
             this.InsertarMascotas.Name = "InsertarMascotas";
             this.InsertarMascotas.Size = new System.Drawing.Size(60, 60);
             this.InsertarMascotas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,7 +185,7 @@
             // 
             this.PictureReturnMascotas.BaseColor = System.Drawing.Color.White;
             this.PictureReturnMascotas.Image = ((System.Drawing.Image)(resources.GetObject("PictureReturnMascotas.Image")));
-            this.PictureReturnMascotas.Location = new System.Drawing.Point(480, 304);
+            this.PictureReturnMascotas.Location = new System.Drawing.Point(565, 330);
             this.PictureReturnMascotas.Name = "PictureReturnMascotas";
             this.PictureReturnMascotas.Size = new System.Drawing.Size(60, 60);
             this.PictureReturnMascotas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

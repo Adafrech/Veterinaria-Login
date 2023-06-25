@@ -64,7 +64,7 @@ namespace Veterinaria_Login.ControlMascotas
             }
         }
 
-        private void btnEliminar_Click_2(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -88,13 +88,27 @@ namespace Veterinaria_Login.ControlMascotas
                         command.Parameters.AddWithValue("@nombreMascota", nombreMascotaSeleccionada);
                         command.ExecuteNonQuery();
                     }
+
+
+
                     MessageBox.Show("Mascota eliminada correctamente");
+                    LimpiarCampos();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error durante la eliminación de animales: " + ex.Message);
             }
+        }
+
+        public void LimpiarCampos()
+        {
+            txtBuscarDni.Text = string.Empty;
+
+
+            comboAnimal.Items.Clear();
+
+            //comboAnimal.SelectedIndex = -1;
         }
     }
 }

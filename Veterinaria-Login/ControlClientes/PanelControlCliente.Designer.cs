@@ -73,7 +73,7 @@
             // 
             this.x.BaseColor = System.Drawing.Color.White;
             this.x.Image = ((System.Drawing.Image)(resources.GetObject("x.Image")));
-            this.x.Location = new System.Drawing.Point(44, 77);
+            this.x.Location = new System.Drawing.Point(50, 80);
             this.x.Name = "x";
             this.x.Size = new System.Drawing.Size(75, 75);
             this.x.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,7 +85,7 @@
             // 
             this.DelCliente.BaseColor = System.Drawing.Color.White;
             this.DelCliente.Image = ((System.Drawing.Image)(resources.GetObject("DelCliente.Image")));
-            this.DelCliente.Location = new System.Drawing.Point(244, 77);
+            this.DelCliente.Location = new System.Drawing.Point(450, 80);
             this.DelCliente.Name = "DelCliente";
             this.DelCliente.Size = new System.Drawing.Size(75, 75);
             this.DelCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,8 +97,8 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaLabel2.Location = new System.Drawing.Point(224, 155);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(435, 155);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(116, 20);
             this.gunaLabel2.TabIndex = 4;
@@ -119,7 +119,7 @@
             // 
             this.PictureQuit.BaseColor = System.Drawing.Color.White;
             this.PictureQuit.Image = ((System.Drawing.Image)(resources.GetObject("PictureQuit.Image")));
-            this.PictureQuit.Location = new System.Drawing.Point(44, 244);
+            this.PictureQuit.Location = new System.Drawing.Point(50, 237);
             this.PictureQuit.Name = "PictureQuit";
             this.PictureQuit.Size = new System.Drawing.Size(75, 75);
             this.PictureQuit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -131,8 +131,8 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaLabel4.Location = new System.Drawing.Point(60, 322);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.gunaLabel4.Location = new System.Drawing.Point(70, 315);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(39, 20);
             this.gunaLabel4.TabIndex = 7;
@@ -142,7 +142,7 @@
             // 
             this.PictureEdit.BaseColor = System.Drawing.Color.White;
             this.PictureEdit.Image = ((System.Drawing.Image)(resources.GetObject("PictureEdit.Image")));
-            this.PictureEdit.Location = new System.Drawing.Point(459, 77);
+            this.PictureEdit.Location = new System.Drawing.Point(250, 80);
             this.PictureEdit.Name = "PictureEdit";
             this.PictureEdit.Size = new System.Drawing.Size(75, 75);
             this.PictureEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,10 +153,11 @@
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(456, 172);
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.gunaLabel5.Location = new System.Drawing.Point(236, 155);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(77, 15);
+            this.gunaLabel5.Size = new System.Drawing.Size(100, 20);
             this.gunaLabel5.TabIndex = 9;
             this.gunaLabel5.Text = "Editar Cliente";
             // 

@@ -42,34 +42,41 @@
             this.txtApellidoBusqueda = new Guna.UI.WinForms.GunaTextBox();
             this.txtNombreBusqueda = new Guna.UI.WinForms.GunaTextBox();
             this.btnActualizar = new Guna.UI.WinForms.GunaButton();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.PicReturn = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscarDni
             // 
             this.btnBuscarDni.AnimationHoverSpeed = 0.07F;
             this.btnBuscarDni.AnimationSpeed = 0.03F;
+            this.btnBuscarDni.BackColor = System.Drawing.Color.Transparent;
             this.btnBuscarDni.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnBuscarDni.BorderColor = System.Drawing.Color.Black;
             this.btnBuscarDni.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBuscarDni.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBuscarDni.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBuscarDni.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnBuscarDni.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarDni.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarDni.Image")));
+            this.btnBuscarDni.Image = null;
             this.btnBuscarDni.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBuscarDni.Location = new System.Drawing.Point(219, 15);
+            this.btnBuscarDni.Location = new System.Drawing.Point(213, 30);
             this.btnBuscarDni.Name = "btnBuscarDni";
             this.btnBuscarDni.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnBuscarDni.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnBuscarDni.OnHoverForeColor = System.Drawing.Color.White;
             this.btnBuscarDni.OnHoverImage = null;
             this.btnBuscarDni.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBuscarDni.Size = new System.Drawing.Size(160, 42);
+            this.btnBuscarDni.Radius = 15;
+            this.btnBuscarDni.Size = new System.Drawing.Size(125, 40);
             this.btnBuscarDni.TabIndex = 0;
             this.btnBuscarDni.Text = "Buscar";
+            this.btnBuscarDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnBuscarDni.Click += new System.EventHandler(this.btnBuscarDni_Click);
             // 
             // txtBusqueda
             // 
+            this.txtBusqueda.BackColor = System.Drawing.Color.Transparent;
             this.txtBusqueda.BaseColor = System.Drawing.Color.White;
             this.txtBusqueda.BorderColor = System.Drawing.Color.Silver;
             this.txtBusqueda.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -77,9 +84,10 @@
             this.txtBusqueda.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtBusqueda.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBusqueda.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBusqueda.Location = new System.Drawing.Point(26, 27);
+            this.txtBusqueda.Location = new System.Drawing.Point(26, 42);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.PasswordChar = '\0';
+            this.txtBusqueda.Radius = 6;
             this.txtBusqueda.Size = new System.Drawing.Size(160, 30);
             this.txtBusqueda.TabIndex = 1;
             // 
@@ -97,7 +105,7 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(303, 271);
+            this.gunaLabel5.Location = new System.Drawing.Point(308, 195);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(40, 17);
             this.gunaLabel5.TabIndex = 22;
@@ -107,7 +115,7 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(303, 191);
+            this.gunaLabel4.Location = new System.Drawing.Point(308, 115);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(50, 17);
             this.gunaLabel4.TabIndex = 21;
@@ -129,9 +137,9 @@
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(23, 115);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(170, 17);
+            this.gunaLabel2.Size = new System.Drawing.Size(121, 17);
             this.gunaLabel2.TabIndex = 19;
-            this.gunaLabel2.Text = "Ingrese Nombre Completo";
+            this.gunaLabel2.Text = "Nombre Completo";
             // 
             // txtEmailBusqueda
             // 
@@ -144,7 +152,7 @@
             this.txtEmailBusqueda.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtEmailBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailBusqueda.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtEmailBusqueda.Location = new System.Drawing.Point(303, 291);
+            this.txtEmailBusqueda.Location = new System.Drawing.Point(308, 215);
             this.txtEmailBusqueda.Name = "txtEmailBusqueda";
             this.txtEmailBusqueda.PasswordChar = '\0';
             this.txtEmailBusqueda.Radius = 6;
@@ -180,7 +188,7 @@
             this.txtCiudadBusqueda.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtCiudadBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCiudadBusqueda.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtCiudadBusqueda.Location = new System.Drawing.Point(303, 211);
+            this.txtCiudadBusqueda.Location = new System.Drawing.Point(308, 135);
             this.txtCiudadBusqueda.Name = "txtCiudadBusqueda";
             this.txtCiudadBusqueda.PasswordChar = '\0';
             this.txtCiudadBusqueda.Radius = 6;
@@ -227,30 +235,57 @@
             // 
             this.btnActualizar.AnimationHoverSpeed = 0.07F;
             this.btnActualizar.AnimationSpeed = 0.03F;
+            this.btnActualizar.BackColor = System.Drawing.Color.Transparent;
             this.btnActualizar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnActualizar.BorderColor = System.Drawing.Color.Black;
             this.btnActualizar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnActualizar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+            this.btnActualizar.Image = null;
             this.btnActualizar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnActualizar.Location = new System.Drawing.Point(389, 15);
+            this.btnActualizar.Location = new System.Drawing.Point(26, 353);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnActualizar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnActualizar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnActualizar.OnHoverImage = null;
             this.btnActualizar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnActualizar.Size = new System.Drawing.Size(160, 42);
+            this.btnActualizar.Radius = 15;
+            this.btnActualizar.Size = new System.Drawing.Size(190, 40);
             this.btnActualizar.TabIndex = 24;
             this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(23, 24);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(103, 15);
+            this.gunaLabel1.TabIndex = 25;
+            this.gunaLabel1.Text = "Busqueda del DNI";
+            // 
+            // PicReturn
+            // 
+            this.PicReturn.BaseColor = System.Drawing.Color.White;
+            this.PicReturn.Image = ((System.Drawing.Image)(resources.GetObject("PicReturn.Image")));
+            this.PicReturn.Location = new System.Drawing.Point(565, 330);
+            this.PicReturn.Name = "PicReturn";
+            this.PicReturn.Size = new System.Drawing.Size(60, 60);
+            this.PicReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicReturn.TabIndex = 26;
+            this.PicReturn.TabStop = false;
+            this.PicReturn.Click += new System.EventHandler(this.PicReturn_Click);
             // 
             // EditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PicReturn);
+            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaLabel5);
@@ -266,6 +301,7 @@
             this.Controls.Add(this.btnBuscarDni);
             this.Name = "EditarCliente";
             this.Size = new System.Drawing.Size(650, 410);
+            ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +322,7 @@
         private Guna.UI.WinForms.GunaTextBox txtApellidoBusqueda;
         private Guna.UI.WinForms.GunaTextBox txtNombreBusqueda;
         private Guna.UI.WinForms.GunaButton btnActualizar;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaPictureBox PicReturn;
     }
 }

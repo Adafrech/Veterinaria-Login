@@ -18,12 +18,6 @@ namespace Veterinaria_Login.ControlConsultas
             addconsul.BringToFront();
         }
 
-        private void DelConsul_Click(object sender, EventArgs e)
-        {
-            EliminarConsultas delcon = new EliminarConsultas();
-            Controls.Add(delcon);
-            delcon.BringToFront();
-        }
 
         private void EditConsul_Click(object sender, EventArgs e)
         {

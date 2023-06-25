@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using Veterinaria_Login.ControlConsultas;
 using Veterinaria_Login.ControlTratamiento;
+using Veterinaria_Login.Historial;
 
 namespace Veterinaria_Login
 {
@@ -48,9 +49,55 @@ namespace Veterinaria_Login
 
         private void btnHistorial_Click(object sender, System.EventArgs e)
         {
-            UserControl hist = new UserControl();
-            PanelPrinc.Controls.Add(hist);
-            hist.BringToFront();
+            PanelHistorial panel = new PanelHistorial();
+            PanelPrinc.Controls.Add(panel);
+            panel.BringToFront();
+
+        }
+
+        private void btnExit_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMax_Click(object sender, System.EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMin_Click(object sender, System.EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+            else if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Minimized;
+            }
+        }
+
+        int posY = 0;
+        int posX = 0;
+        private void VeterinariaPrincipal_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                posX = e.X;
+                posY = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - posX);
+                Top = Top + (e.Y - posY);
+            }
         }
     }
 }

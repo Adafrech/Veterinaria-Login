@@ -161,6 +161,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel1.Location = new System.Drawing.Point(20, 23);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(28, 17);
@@ -171,6 +172,7 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel2.Location = new System.Drawing.Point(20, 103);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(121, 17);
@@ -181,6 +183,7 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel3.Location = new System.Drawing.Point(330, 102);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(57, 17);
@@ -191,6 +194,7 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel4.Location = new System.Drawing.Point(20, 183);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(50, 17);
@@ -201,6 +205,7 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel5.Location = new System.Drawing.Point(330, 183);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(40, 17);
@@ -211,6 +216,7 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel6.Location = new System.Drawing.Point(20, 263);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(59, 17);
@@ -221,9 +227,9 @@
             // 
             this.PictureReturn.BaseColor = System.Drawing.Color.White;
             this.PictureReturn.Image = ((System.Drawing.Image)(resources.GetObject("PictureReturn.Image")));
-            this.PictureReturn.Location = new System.Drawing.Point(529, 283);
+            this.PictureReturn.Location = new System.Drawing.Point(565, 330);
             this.PictureReturn.Name = "PictureReturn";
-            this.PictureReturn.Size = new System.Drawing.Size(83, 75);
+            this.PictureReturn.Size = new System.Drawing.Size(60, 60);
             this.PictureReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureReturn.TabIndex = 12;
             this.PictureReturn.TabStop = false;
@@ -233,9 +239,9 @@
             // 
             this.InsertarClientes.BaseColor = System.Drawing.Color.White;
             this.InsertarClientes.Image = ((System.Drawing.Image)(resources.GetObject("InsertarClientes.Image")));
-            this.InsertarClientes.Location = new System.Drawing.Point(333, 283);
+            this.InsertarClientes.Location = new System.Drawing.Point(400, 330);
             this.InsertarClientes.Name = "InsertarClientes";
-            this.InsertarClientes.Size = new System.Drawing.Size(83, 75);
+            this.InsertarClientes.Size = new System.Drawing.Size(60, 60);
             this.InsertarClientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.InsertarClientes.TabIndex = 13;
             this.InsertarClientes.TabStop = false;
@@ -267,6 +273,7 @@
             // 
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.gunaLabel7.Location = new System.Drawing.Point(330, 23);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(52, 17);

@@ -16,13 +16,6 @@ namespace Veterinaria_Login.ControlTratamiento
             addtrat.BringToFront();
         }
 
-        private void ElimTrat_Click(object sender, System.EventArgs e)
-        {
-            EliminarTratamiento elimtrat = new EliminarTratamiento();
-            Controls.Add(elimtrat);
-            elimtrat.BringToFront();
-        }
-
         private void EditTrat_Click(object sender, System.EventArgs e)
         {
             EditarTratamiento editrat = new EditarTratamiento();

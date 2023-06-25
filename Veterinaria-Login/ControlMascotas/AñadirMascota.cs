@@ -87,7 +87,8 @@ namespace Veterinaria_Login
             txtRaza.Text = string.Empty;
             DateTimePick.Value = DateTime.Now;
             txtDniFK.Text = string.Empty;
-            EspecieBox.Items.Clear();
+            EspecieBox.SelectedIndex = -1;
+
         }
 
         private void AñadirMascota_Load_1(object sender, EventArgs e)

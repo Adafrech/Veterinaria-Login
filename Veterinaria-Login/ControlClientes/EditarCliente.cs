@@ -111,5 +111,17 @@ namespace Veterinaria_Login.ControlClientes
             txtTelefonoBusqueda.Text = "";
             txtEmailBusqueda.Text = "";
         }
+
+        private void PicReturn_Click(object sender, EventArgs e)
+        {
+            Control contenedor = this.Parent;
+
+
+            PanelControlCliente backmenu = new PanelControlCliente();
+
+            contenedor.Controls.Remove(this);
+
+            contenedor.Controls.Add(backmenu);
+        }
     }
 }

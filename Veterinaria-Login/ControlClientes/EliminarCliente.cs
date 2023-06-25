@@ -13,6 +13,7 @@ namespace Veterinaria_Login
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 string dni = DelCliente.Text.Trim();
@@ -26,13 +27,35 @@ namespace Veterinaria_Login
                 {
                     conn.Open();
 
-                    string query = "DELETE FROM Clientes WHERE Dni = @dni";
-
-                    using (SqlCommand comando = new SqlCommand(query, conn))
+                    string deleteMascotasQuery = "DELETE FROM Mascotas WHERE DniCliente = @dni";
+                    using (SqlCommand deleteMascotasCommand = new SqlCommand(deleteMascotasQuery, conn))
                     {
-                        comando.Parameters.AddWithValue("@dni", dni);
+                        deleteMascotasCommand.Parameters.AddWithValue("@dni", dni);
+                        deleteMascotasCommand.ExecuteNonQuery();
+                    }
 
-                        int rowsAffected = comando.ExecuteNonQuery();
+                    string deleteConsultasQuery = "DELETE FROM Consultas WHERE DniCliente = @dni";
+                    using (SqlCommand deleteConsultasCommand = new SqlCommand(deleteConsultasQuery, conn))
+                    {
+                        deleteConsultasCommand.Parameters.AddWithValue("@dni", dni);
+                        deleteConsultasCommand.ExecuteNonQuery();
+                    }
+
+
+                    string deleteTratamientosQuery = "DELETE FROM Tratamientos WHERE DniDueñoMascota = @dni";
+                    using (SqlCommand deleteTratamientosCommand = new SqlCommand(deleteTratamientosQuery, conn))
+                    {
+                        deleteTratamientosCommand.Parameters.AddWithValue("@dni", dni);
+                        deleteTratamientosCommand.ExecuteNonQuery();
+                    }
+
+
+                    string deleteClientesQuery = "DELETE FROM Clientes WHERE Dni = @dni";
+                    using (SqlCommand deleteClientesCommand = new SqlCommand(deleteClientesQuery, conn))
+                    {
+                        deleteClientesCommand.Parameters.AddWithValue("@dni", dni);
+
+                        int rowsAffected = deleteClientesCommand.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
@@ -41,16 +64,18 @@ namespace Veterinaria_Login
                         else
                         {
                             MessageBox.Show("No se encontró ninguna persona con el DNI especificado");
-                            conn.Close();
                         }
-                        conn.Close();
                     }
+
+                    conn.Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+
+
         }
 
         private void PictureReturnMascotas_Click(object sender, EventArgs e)

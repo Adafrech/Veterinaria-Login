@@ -41,78 +41,88 @@
             this.txtDni = new Guna.UI.WinForms.GunaTextBox();
             this.btnEditarTratamiento = new Guna.UI.WinForms.GunaButton();
             this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscarTrat
             // 
             this.btnBuscarTrat.AnimationHoverSpeed = 0.07F;
             this.btnBuscarTrat.AnimationSpeed = 0.03F;
+            this.btnBuscarTrat.BackColor = System.Drawing.Color.Transparent;
             this.btnBuscarTrat.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnBuscarTrat.BorderColor = System.Drawing.Color.Black;
             this.btnBuscarTrat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBuscarTrat.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBuscarTrat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBuscarTrat.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnBuscarTrat.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarTrat.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarTrat.Image")));
+            this.btnBuscarTrat.Image = null;
             this.btnBuscarTrat.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBuscarTrat.Location = new System.Drawing.Point(223, 38);
+            this.btnBuscarTrat.Location = new System.Drawing.Point(306, 35);
             this.btnBuscarTrat.Name = "btnBuscarTrat";
             this.btnBuscarTrat.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnBuscarTrat.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnBuscarTrat.OnHoverForeColor = System.Drawing.Color.White;
             this.btnBuscarTrat.OnHoverImage = null;
             this.btnBuscarTrat.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBuscarTrat.Size = new System.Drawing.Size(160, 42);
+            this.btnBuscarTrat.Radius = 15;
+            this.btnBuscarTrat.Size = new System.Drawing.Size(125, 45);
             this.btnBuscarTrat.TabIndex = 21;
             this.btnBuscarTrat.Text = "Buscar";
+            this.btnBuscarTrat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.lblPrecio.Location = new System.Drawing.Point(25, 229);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(40, 15);
+            this.lblPrecio.Size = new System.Drawing.Size(45, 17);
             this.lblPrecio.TabIndex = 20;
             this.lblPrecio.Text = "Precio";
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(234, 223);
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.gunaLabel4.Location = new System.Drawing.Point(307, 229);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(69, 15);
+            this.gunaLabel4.Size = new System.Drawing.Size(77, 17);
             this.gunaLabel4.TabIndex = 19;
             this.gunaLabel4.Text = "Descripcion";
             // 
             // lblTratamiento
             // 
             this.lblTratamiento.AutoSize = true;
-            this.lblTratamiento.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblTratamiento.Location = new System.Drawing.Point(25, 132);
+            this.lblTratamiento.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblTratamiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.lblTratamiento.Location = new System.Drawing.Point(25, 123);
             this.lblTratamiento.Name = "lblTratamiento";
-            this.lblTratamiento.Size = new System.Drawing.Size(70, 15);
+            this.lblTratamiento.Size = new System.Drawing.Size(81, 17);
             this.lblTratamiento.TabIndex = 18;
             this.lblTratamiento.Text = "Tratamiento";
             // 
             // lblMascota
             // 
             this.lblMascota.AutoSize = true;
-            this.lblMascota.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblMascota.Location = new System.Drawing.Point(234, 132);
+            this.lblMascota.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblMascota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.lblMascota.Location = new System.Drawing.Point(307, 123);
             this.lblMascota.Name = "lblMascota";
-            this.lblMascota.Size = new System.Drawing.Size(52, 15);
+            this.lblMascota.Size = new System.Drawing.Size(59, 17);
             this.lblMascota.TabIndex = 17;
             this.lblMascota.Text = "Mascota";
             // 
             // lblDni
             // 
             this.lblDni.AutoSize = true;
-            this.lblDni.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDni.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblDni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
             this.lblDni.Location = new System.Drawing.Point(27, 32);
             this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(25, 15);
+            this.lblDni.Size = new System.Drawing.Size(28, 17);
             this.lblDni.TabIndex = 16;
             this.lblDni.Text = "Dni";
             // 
@@ -140,7 +150,7 @@
             this.txtDescripcion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtDescripcion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDescripcion.Location = new System.Drawing.Point(237, 241);
+            this.txtDescripcion.Location = new System.Drawing.Point(310, 247);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
             this.txtDescripcion.Size = new System.Drawing.Size(160, 30);
@@ -155,7 +165,7 @@
             this.txtNombreTratamiento.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtNombreTratamiento.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNombreTratamiento.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombreTratamiento.Location = new System.Drawing.Point(28, 150);
+            this.txtNombreTratamiento.Location = new System.Drawing.Point(28, 141);
             this.txtNombreTratamiento.Name = "txtNombreTratamiento";
             this.txtNombreTratamiento.PasswordChar = '\0';
             this.txtNombreTratamiento.Size = new System.Drawing.Size(160, 30);
@@ -180,24 +190,27 @@
             // 
             this.btnEditarTratamiento.AnimationHoverSpeed = 0.07F;
             this.btnEditarTratamiento.AnimationSpeed = 0.03F;
+            this.btnEditarTratamiento.BackColor = System.Drawing.Color.Transparent;
             this.btnEditarTratamiento.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnEditarTratamiento.BorderColor = System.Drawing.Color.Black;
             this.btnEditarTratamiento.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditarTratamiento.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEditarTratamiento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditarTratamiento.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnEditarTratamiento.ForeColor = System.Drawing.Color.White;
-            this.btnEditarTratamiento.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarTratamiento.Image")));
+            this.btnEditarTratamiento.Image = null;
             this.btnEditarTratamiento.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditarTratamiento.Location = new System.Drawing.Point(436, 326);
+            this.btnEditarTratamiento.Location = new System.Drawing.Point(28, 324);
             this.btnEditarTratamiento.Name = "btnEditarTratamiento";
             this.btnEditarTratamiento.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEditarTratamiento.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEditarTratamiento.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEditarTratamiento.OnHoverImage = null;
             this.btnEditarTratamiento.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEditarTratamiento.Size = new System.Drawing.Size(160, 42);
+            this.btnEditarTratamiento.Radius = 15;
+            this.btnEditarTratamiento.Size = new System.Drawing.Size(162, 45);
             this.btnEditarTratamiento.TabIndex = 22;
             this.btnEditarTratamiento.Text = "Editar Tratamiento";
+            this.btnEditarTratamiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaComboBox1
             // 
@@ -210,17 +223,29 @@
             this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(237, 154);
+            this.gunaComboBox1.Location = new System.Drawing.Point(310, 145);
             this.gunaComboBox1.Name = "gunaComboBox1";
             this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
             this.gunaComboBox1.Size = new System.Drawing.Size(121, 26);
             this.gunaComboBox1.TabIndex = 23;
             // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.Location = new System.Drawing.Point(565, 330);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 24;
+            this.gunaPictureBox1.TabStop = false;
+            // 
             // EditarTratamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.btnEditarTratamiento);
             this.Controls.Add(this.btnBuscarTrat);
@@ -235,6 +260,7 @@
             this.Controls.Add(this.txtDni);
             this.Name = "EditarTratamiento";
             this.Size = new System.Drawing.Size(650, 410);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +280,6 @@
         private Guna.UI.WinForms.GunaTextBox txtDni;
         private Guna.UI.WinForms.GunaButton btnEditarTratamiento;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
     }
 }

@@ -43,7 +43,7 @@
             this.comboEspecie = new Guna.UI.WinForms.GunaComboBox();
             this.btnBuscar = new Guna.UI.WinForms.GunaButton();
             this.btnActualizar = new Guna.UI.WinForms.GunaButton();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.nuevoNombre = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -278,21 +278,22 @@
             this.btnActualizar.TabIndex = 31;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // gunaTextBox1
+            // nuevoNombre
             // 
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(15, 125);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Size = new System.Drawing.Size(160, 30);
-            this.gunaTextBox1.TabIndex = 32;
+            this.nuevoNombre.BaseColor = System.Drawing.Color.White;
+            this.nuevoNombre.BorderColor = System.Drawing.Color.Silver;
+            this.nuevoNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nuevoNombre.FocusedBaseColor = System.Drawing.Color.White;
+            this.nuevoNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.nuevoNombre.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.nuevoNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nuevoNombre.Location = new System.Drawing.Point(15, 125);
+            this.nuevoNombre.Name = "nuevoNombre";
+            this.nuevoNombre.PasswordChar = '\0';
+            this.nuevoNombre.Size = new System.Drawing.Size(160, 30);
+            this.nuevoNombre.TabIndex = 32;
             // 
             // label4
             // 
@@ -322,7 +323,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.gunaTextBox1);
+            this.Controls.Add(this.nuevoNombre);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.comboEspecie);
@@ -361,7 +362,7 @@
         private Guna.UI.WinForms.GunaComboBox comboEspecie;
         private Guna.UI.WinForms.GunaButton btnBuscar;
         private Guna.UI.WinForms.GunaButton btnActualizar;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox nuevoNombre;
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
     }

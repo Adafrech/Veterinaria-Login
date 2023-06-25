@@ -54,6 +54,13 @@ namespace Veterinaria_Login
                         DateTime fechaNacimiento = DateTimePick.Value;
                         string opselect = EspecieBox.SelectedItem.ToString();
 
+                        if (string.IsNullOrEmpty(nombreMascota) || string.IsNullOrEmpty(sexoMascota) || string.IsNullOrEmpty(razaMascota) || string.IsNullOrEmpty(opselect))
+                        {
+                            conn.Close();
+                            throw new Exception("Todos los campos son obligatorios.");
+                        }
+
+
                         comando.Parameters.AddWithValue("@nombre", nombreMascota);
                         comando.Parameters.AddWithValue("@sexo", sexoMascota);
                         comando.Parameters.AddWithValue("@raza", razaMascota);

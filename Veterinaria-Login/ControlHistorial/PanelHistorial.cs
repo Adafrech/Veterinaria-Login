@@ -24,7 +24,7 @@ namespace Veterinaria_Login.Historial
                     string consulta = @"SELECT C.Dni, C.Nombre, C.Ciudad, M.Nombre AS MascotaNombre, M.Sexo, M.Especie, M.FechaNacimiento, CO.Motivo, CO.Observaciones, CO.Fecha, T.NombreTratamiento AS NombreTratamiento, T.Descripcion, T.Precio
                     FROM Clientes C
                     INNER JOIN Mascotas M ON C.DNI = M.DniCliente
-                    LEFT JOIN Consultas CO ON M.DniCliente = CO.DniCliente AND M.Nombre = CO.MascotaConsuly
+                    LEFT JOIN Consultas CO ON M.DniCliente = CO.DniCliente AND M.Nombre = CO.MascotaConsul
                     LEFT JOIN Tratamientos T ON M.DniCliente = T.DniDueñoMascota AND M.Nombre = T.MascotaTratada
                     WHERE C.DNI = @dni";
 
@@ -63,6 +63,12 @@ namespace Veterinaria_Login.Historial
         private void PanelHistorial_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiarHistorial_Click(object sender, EventArgs e)
+        {
+            ((DataTable)Historial.DataSource)?.Clear();
+            txtBuscar.Text = string.Empty;
         }
     }
 

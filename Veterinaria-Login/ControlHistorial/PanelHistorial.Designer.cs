@@ -102,6 +102,7 @@
             this.btnLimpiarHistorial.TabIndex = 4;
             this.btnLimpiarHistorial.Text = "Limpiar Historial";
             this.btnLimpiarHistorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLimpiarHistorial.Click += new System.EventHandler(this.btnLimpiarHistorial_Click);
             // 
             // Historial
             // 
@@ -112,9 +113,11 @@
             this.Historial.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Historial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Historial.Location = new System.Drawing.Point(36, 83);
+            this.Historial.MultiSelect = false;
             this.Historial.Name = "Historial";
             this.Historial.Size = new System.Drawing.Size(568, 293);
             this.Historial.TabIndex = 3;
+            this.Historial.TabStop = false;
             this.Historial.VirtualMode = true;
             // 
             // PanelHistorial

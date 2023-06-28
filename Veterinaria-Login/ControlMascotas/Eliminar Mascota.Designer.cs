@@ -35,8 +35,8 @@
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.comboAnimal = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.picReturn = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscarDni
@@ -155,23 +155,24 @@
             this.gunaLabel1.TabIndex = 6;
             this.gunaLabel1.Text = "Animales en posesion";
             // 
-            // gunaPictureBox1
+            // picReturn
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(565, 330);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 7;
-            this.gunaPictureBox1.TabStop = false;
+            this.picReturn.BaseColor = System.Drawing.Color.White;
+            this.picReturn.Image = ((System.Drawing.Image)(resources.GetObject("picReturn.Image")));
+            this.picReturn.Location = new System.Drawing.Point(565, 330);
+            this.picReturn.Name = "picReturn";
+            this.picReturn.Size = new System.Drawing.Size(60, 60);
+            this.picReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picReturn.TabIndex = 7;
+            this.picReturn.TabStop = false;
+            this.picReturn.Click += new System.EventHandler(this.picReturn_Click);
             // 
             // EliminarMascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.gunaPictureBox1);
+            this.Controls.Add(this.picReturn);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.comboAnimal);
             this.Controls.Add(this.btnEliminar);
@@ -181,7 +182,7 @@
             this.Name = "EliminarMascota";
             this.Size = new System.Drawing.Size(650, 410);
             this.Load += new System.EventHandler(this.EliminarMascota_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,6 +196,6 @@
         private Guna.UI.WinForms.GunaButton btnEliminar;
         private Guna.UI.WinForms.GunaComboBox comboAnimal;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox picReturn;
     }
 }

@@ -45,8 +45,8 @@
             this.btnActualizar = new Guna.UI.WinForms.GunaButton();
             this.nuevoNombre = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.PicReturn = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDni
@@ -306,22 +306,23 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "Nuevo Nombre";
             // 
-            // gunaPictureBox1
+            // PicReturn
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(565, 330);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 34;
-            this.gunaPictureBox1.TabStop = false;
+            this.PicReturn.BaseColor = System.Drawing.Color.White;
+            this.PicReturn.Image = ((System.Drawing.Image)(resources.GetObject("PicReturn.Image")));
+            this.PicReturn.Location = new System.Drawing.Point(565, 330);
+            this.PicReturn.Name = "PicReturn";
+            this.PicReturn.Size = new System.Drawing.Size(60, 60);
+            this.PicReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicReturn.TabIndex = 34;
+            this.PicReturn.TabStop = false;
+            this.PicReturn.Click += new System.EventHandler(this.PicReturn_Click);
             // 
             // EditarMascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gunaPictureBox1);
+            this.Controls.Add(this.PicReturn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.nuevoNombre);
             this.Controls.Add(this.btnActualizar);
@@ -340,7 +341,7 @@
             this.Controls.Add(this.txtDni);
             this.Name = "EditarMascota";
             this.Size = new System.Drawing.Size(650, 410);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,6 +365,6 @@
         private Guna.UI.WinForms.GunaButton btnActualizar;
         private Guna.UI.WinForms.GunaTextBox nuevoNombre;
         private System.Windows.Forms.Label label4;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox PicReturn;
     }
 }

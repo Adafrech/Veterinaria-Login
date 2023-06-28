@@ -44,6 +44,8 @@
             this.btnActualizar = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.PicReturn = new Guna.UI.WinForms.GunaPictureBox();
+            this.comboGen = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +98,7 @@
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(23, 271);
+            this.gunaLabel6.Location = new System.Drawing.Point(299, 115);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(59, 17);
             this.gunaLabel6.TabIndex = 23;
@@ -118,7 +120,7 @@
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(308, 115);
+            this.gunaLabel4.Location = new System.Drawing.Point(30, 271);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(50, 17);
             this.gunaLabel4.TabIndex = 21;
@@ -175,7 +177,7 @@
             this.txtTelefonoBusqueda.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtTelefonoBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoBusqueda.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtTelefonoBusqueda.Location = new System.Drawing.Point(23, 291);
+            this.txtTelefonoBusqueda.Location = new System.Drawing.Point(299, 135);
             this.txtTelefonoBusqueda.Name = "txtTelefonoBusqueda";
             this.txtTelefonoBusqueda.PasswordChar = '\0';
             this.txtTelefonoBusqueda.Radius = 6;
@@ -193,7 +195,7 @@
             this.txtCiudadBusqueda.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtCiudadBusqueda.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCiudadBusqueda.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtCiudadBusqueda.Location = new System.Drawing.Point(308, 135);
+            this.txtCiudadBusqueda.Location = new System.Drawing.Point(30, 291);
             this.txtCiudadBusqueda.Name = "txtCiudadBusqueda";
             this.txtCiudadBusqueda.PasswordChar = '\0';
             this.txtCiudadBusqueda.Radius = 6;
@@ -286,10 +288,44 @@
             this.PicReturn.TabStop = false;
             this.PicReturn.Click += new System.EventHandler(this.PicReturn_Click);
             // 
+            // comboGen
+            // 
+            this.comboGen.BackColor = System.Drawing.Color.Transparent;
+            this.comboGen.BaseColor = System.Drawing.Color.White;
+            this.comboGen.BorderColor = System.Drawing.Color.Silver;
+            this.comboGen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboGen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboGen.FocusedColor = System.Drawing.Color.Empty;
+            this.comboGen.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboGen.ForeColor = System.Drawing.Color.Black;
+            this.comboGen.FormattingEnabled = true;
+            this.comboGen.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.comboGen.Location = new System.Drawing.Point(311, 291);
+            this.comboGen.Name = "comboGen";
+            this.comboGen.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.comboGen.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.comboGen.Size = new System.Drawing.Size(243, 26);
+            this.comboGen.TabIndex = 27;
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
+            this.gunaLabel7.Location = new System.Drawing.Point(308, 271);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(52, 17);
+            this.gunaLabel7.TabIndex = 28;
+            this.gunaLabel7.Text = "Genero";
+            // 
             // EditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gunaLabel7);
+            this.Controls.Add(this.comboGen);
             this.Controls.Add(this.PicReturn);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btnActualizar);
@@ -330,5 +366,7 @@
         private Guna.UI.WinForms.GunaButton btnActualizar;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaPictureBox PicReturn;
+        private Guna.UI.WinForms.GunaComboBox comboGen;
+        private Guna.UI.WinForms.GunaLabel gunaLabel7;
     }
 }

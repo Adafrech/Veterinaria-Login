@@ -43,7 +43,7 @@
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.PictureReturn = new Guna.UI.WinForms.GunaPictureBox();
             this.InsertarClientes = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.GenCombo = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PictureReturn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InsertarClientes)).BeginInit();
@@ -247,27 +247,27 @@
             this.InsertarClientes.TabStop = false;
             this.InsertarClientes.Click += new System.EventHandler(this.InsertarClientes_Click);
             // 
-            // gunaComboBox1
+            // GenCombo
             // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Items.AddRange(new object[] {
+            this.GenCombo.BackColor = System.Drawing.Color.Transparent;
+            this.GenCombo.BaseColor = System.Drawing.Color.White;
+            this.GenCombo.BorderColor = System.Drawing.Color.Silver;
+            this.GenCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GenCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenCombo.FocusedColor = System.Drawing.Color.Empty;
+            this.GenCombo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.GenCombo.ForeColor = System.Drawing.Color.Black;
+            this.GenCombo.FormattingEnabled = true;
+            this.GenCombo.Items.AddRange(new object[] {
             "MASCULINO",
             "FEMENINO"});
-            this.gunaComboBox1.Location = new System.Drawing.Point(328, 43);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Radius = 6;
-            this.gunaComboBox1.Size = new System.Drawing.Size(246, 26);
-            this.gunaComboBox1.TabIndex = 14;
+            this.GenCombo.Location = new System.Drawing.Point(328, 43);
+            this.GenCombo.Name = "GenCombo";
+            this.GenCombo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.GenCombo.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.GenCombo.Radius = 6;
+            this.GenCombo.Size = new System.Drawing.Size(246, 26);
+            this.GenCombo.TabIndex = 14;
             // 
             // gunaLabel7
             // 
@@ -285,7 +285,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.gunaComboBox1);
+            this.Controls.Add(this.GenCombo);
             this.Controls.Add(this.InsertarClientes);
             this.Controls.Add(this.PictureReturn);
             this.Controls.Add(this.gunaLabel6);
@@ -326,7 +326,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaPictureBox PictureReturn;
         private Guna.UI.WinForms.GunaPictureBox InsertarClientes;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private Guna.UI.WinForms.GunaComboBox GenCombo;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
     }
 }

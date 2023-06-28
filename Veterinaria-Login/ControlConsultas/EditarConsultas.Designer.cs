@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarConsultas));
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -37,9 +38,11 @@
             this.btnBuscar = new Guna.UI.WinForms.GunaButton();
             this.btnActualizar = new Guna.UI.WinForms.GunaButton();
             this.txtMotivoEdit = new Guna.UI.WinForms.GunaTextBox();
-            this.txtMascotaEdit = new Guna.UI.WinForms.GunaTextBox();
             this.timerFecha = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.comboAnimal = new Guna.UI.WinForms.GunaComboBox();
+            this.PicReturn = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaLabel4
@@ -58,7 +61,7 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(31, 93);
+            this.gunaLabel3.Location = new System.Drawing.Point(31, 202);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(51, 17);
             this.gunaLabel3.TabIndex = 31;
@@ -69,7 +72,7 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(95)))), ((int)(((byte)(94)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(31, 165);
+            this.gunaLabel2.Location = new System.Drawing.Point(31, 113);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(59, 17);
             this.gunaLabel2.TabIndex = 30;
@@ -169,6 +172,7 @@
             this.btnActualizar.TabIndex = 34;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // txtMotivoEdit
             // 
@@ -179,26 +183,11 @@
             this.txtMotivoEdit.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMotivoEdit.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMotivoEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMotivoEdit.Location = new System.Drawing.Point(31, 113);
+            this.txtMotivoEdit.Location = new System.Drawing.Point(31, 222);
             this.txtMotivoEdit.Name = "txtMotivoEdit";
             this.txtMotivoEdit.PasswordChar = '\0';
             this.txtMotivoEdit.Size = new System.Drawing.Size(160, 30);
             this.txtMotivoEdit.TabIndex = 27;
-            // 
-            // txtMascotaEdit
-            // 
-            this.txtMascotaEdit.BaseColor = System.Drawing.Color.White;
-            this.txtMascotaEdit.BorderColor = System.Drawing.Color.Silver;
-            this.txtMascotaEdit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMascotaEdit.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMascotaEdit.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtMascotaEdit.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMascotaEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMascotaEdit.Location = new System.Drawing.Point(31, 185);
-            this.txtMascotaEdit.Name = "txtMascotaEdit";
-            this.txtMascotaEdit.PasswordChar = '\0';
-            this.txtMascotaEdit.Size = new System.Drawing.Size(160, 30);
-            this.txtMascotaEdit.TabIndex = 26;
             // 
             // timerFecha
             // 
@@ -233,10 +222,42 @@
             this.gunaLabel5.TabIndex = 36;
             this.gunaLabel5.Text = "Fecha de Consulta";
             // 
+            // comboAnimal
+            // 
+            this.comboAnimal.BackColor = System.Drawing.Color.Transparent;
+            this.comboAnimal.BaseColor = System.Drawing.Color.White;
+            this.comboAnimal.BorderColor = System.Drawing.Color.Silver;
+            this.comboAnimal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboAnimal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAnimal.FocusedColor = System.Drawing.Color.Empty;
+            this.comboAnimal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboAnimal.ForeColor = System.Drawing.Color.Black;
+            this.comboAnimal.FormattingEnabled = true;
+            this.comboAnimal.Location = new System.Drawing.Point(34, 133);
+            this.comboAnimal.Name = "comboAnimal";
+            this.comboAnimal.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.comboAnimal.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.comboAnimal.Size = new System.Drawing.Size(157, 26);
+            this.comboAnimal.TabIndex = 37;
+            // 
+            // PicReturn
+            // 
+            this.PicReturn.BaseColor = System.Drawing.Color.White;
+            this.PicReturn.Image = ((System.Drawing.Image)(resources.GetObject("PicReturn.Image")));
+            this.PicReturn.Location = new System.Drawing.Point(562, 323);
+            this.PicReturn.Name = "PicReturn";
+            this.PicReturn.Size = new System.Drawing.Size(60, 60);
+            this.PicReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicReturn.TabIndex = 38;
+            this.PicReturn.TabStop = false;
+            this.PicReturn.Click += new System.EventHandler(this.PicReturn_Click);
+            // 
             // EditarConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PicReturn);
+            this.Controls.Add(this.comboAnimal);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.timerFecha);
             this.Controls.Add(this.btnActualizar);
@@ -247,10 +268,10 @@
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.txtObservacionEdit);
             this.Controls.Add(this.txtMotivoEdit);
-            this.Controls.Add(this.txtMascotaEdit);
             this.Controls.Add(this.txtDniEdit);
             this.Name = "EditarConsultas";
             this.Size = new System.Drawing.Size(650, 410);
+            ((System.ComponentModel.ISupportInitialize)(this.PicReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,8 +288,9 @@
         private Guna.UI.WinForms.GunaButton btnBuscar;
         private Guna.UI.WinForms.GunaButton btnActualizar;
         private Guna.UI.WinForms.GunaTextBox txtMotivoEdit;
-        private Guna.UI.WinForms.GunaTextBox txtMascotaEdit;
         private Guna.UI.WinForms.GunaDateTimePicker timerFecha;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaComboBox comboAnimal;
+        private Guna.UI.WinForms.GunaPictureBox PicReturn;
     }
 }

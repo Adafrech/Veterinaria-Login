@@ -14,7 +14,6 @@ namespace Veterinaria_Login
         {
             Control contenedor = this.Parent;
 
-
             PanelControlCliente backmenu = new PanelControlCliente();
 
             contenedor.Controls.Remove(this);
@@ -30,7 +29,7 @@ namespace Veterinaria_Login
                 {
                     conn.Open();
 
-                    string query = "INSERT INTO Clientes (Dni, Nombre, Apellido, Ciudad, NumeroTelefono, Correo) VALUES (@dni, @nombre, @apellido, @ciudad, @telefono, @correo)";
+                    string query = "INSERT INTO Clientes (Dni, Nombre, Apellido, Ciudad, NumeroTelefono, Correo, Genero) VALUES (@dni, @nombre, @apellido, @ciudad, @telefono, @correo, @genero)";
 
                     using (SqlCommand comando = new SqlCommand(query, conn))
                     {
@@ -40,8 +39,9 @@ namespace Veterinaria_Login
                         string ciudad = txtCiudad.Text.Trim();
                         string telefono = txtTelefono.Text.Trim();
                         string correo = txtEmail.Text.Trim();
+                        string genero = GenCombo.Text.Trim();
 
-                        if (string.IsNullOrEmpty(dni) || string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) || string.IsNullOrEmpty(ciudad) || string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(correo))
+                        if (string.IsNullOrEmpty(dni) || string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) || string.IsNullOrEmpty(ciudad) || string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(correo) || string.IsNullOrEmpty(genero))
                         {
                             conn.Close();
                             throw new Exception("Todos los campos son obligatorios.");
@@ -53,6 +53,7 @@ namespace Veterinaria_Login
                         comando.Parameters.AddWithValue("@ciudad", ciudad);
                         comando.Parameters.AddWithValue("@telefono", telefono);
                         comando.Parameters.AddWithValue("@correo", correo);
+                        comando.Parameters.AddWithValue("@genero", genero);
 
                         comando.ExecuteNonQuery();
                         conn.Close();
@@ -75,6 +76,8 @@ namespace Veterinaria_Login
             txtCiudad.Text = "";
             txtTelefono.Text = "";
             txtEmail.Text = "";
+            GenCombo.SelectedIndex = -1;
+            GenCombo.Items.Clear();
         }
 
         private void AñadirCliente_Load(object sender, EventArgs e)

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AñadirTratamiento));
             this.txtDni = new Guna.UI.WinForms.GunaTextBox();
-            this.txtMascota = new Guna.UI.WinForms.GunaTextBox();
             this.txtNombreTratamiento = new Guna.UI.WinForms.GunaTextBox();
             this.txtDescripcion = new Guna.UI.WinForms.GunaTextBox();
             this.txtPrecio = new Guna.UI.WinForms.GunaTextBox();
@@ -41,8 +40,10 @@
             this.lblPrecio = new Guna.UI.WinForms.GunaLabel();
             this.btnCargarDatos = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.picReturn = new Guna.UI.WinForms.GunaPictureBox();
+            this.BtnBuscar = new Guna.UI.WinForms.GunaButton();
+            this.comboAnimal = new Guna.UI.WinForms.GunaComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDni
@@ -59,21 +60,6 @@
             this.txtDni.PasswordChar = '\0';
             this.txtDni.Size = new System.Drawing.Size(160, 34);
             this.txtDni.TabIndex = 0;
-            // 
-            // txtMascota
-            // 
-            this.txtMascota.BaseColor = System.Drawing.Color.White;
-            this.txtMascota.BorderColor = System.Drawing.Color.Silver;
-            this.txtMascota.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMascota.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMascota.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtMascota.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMascota.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMascota.Location = new System.Drawing.Point(291, 47);
-            this.txtMascota.Name = "txtMascota";
-            this.txtMascota.PasswordChar = '\0';
-            this.txtMascota.Size = new System.Drawing.Size(160, 34);
-            this.txtMascota.TabIndex = 1;
             // 
             // txtNombreTratamiento
             // 
@@ -188,7 +174,7 @@
             this.btnCargarDatos.ForeColor = System.Drawing.Color.White;
             this.btnCargarDatos.Image = null;
             this.btnCargarDatos.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCargarDatos.Location = new System.Drawing.Point(26, 325);
+            this.btnCargarDatos.Location = new System.Drawing.Point(291, 330);
             this.btnCargarDatos.Name = "btnCargarDatos";
             this.btnCargarDatos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnCargarDatos.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -213,23 +199,71 @@
             this.gunaLabel1.TabIndex = 11;
             this.gunaLabel1.Text = "$";
             // 
-            // gunaPictureBox1
+            // picReturn
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(565, 330);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 12;
-            this.gunaPictureBox1.TabStop = false;
+            this.picReturn.BaseColor = System.Drawing.Color.White;
+            this.picReturn.Image = ((System.Drawing.Image)(resources.GetObject("picReturn.Image")));
+            this.picReturn.Location = new System.Drawing.Point(565, 330);
+            this.picReturn.Name = "picReturn";
+            this.picReturn.Size = new System.Drawing.Size(60, 60);
+            this.picReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picReturn.TabIndex = 12;
+            this.picReturn.TabStop = false;
+            this.picReturn.Click += new System.EventHandler(this.picReturn_Click);
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.AnimationHoverSpeed = 0.07F;
+            this.BtnBuscar.AnimationSpeed = 0.03F;
+            this.BtnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnBuscar.BorderColor = System.Drawing.Color.Black;
+            this.BtnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnBuscar.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Image = null;
+            this.BtnBuscar.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnBuscar.Location = new System.Drawing.Point(26, 330);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnBuscar.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.OnHoverImage = null;
+            this.BtnBuscar.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnBuscar.Radius = 15;
+            this.BtnBuscar.Size = new System.Drawing.Size(160, 42);
+            this.BtnBuscar.TabIndex = 13;
+            this.BtnBuscar.Text = "Buscar Datos";
+            this.BtnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // comboAnimal
+            // 
+            this.comboAnimal.BackColor = System.Drawing.Color.Transparent;
+            this.comboAnimal.BaseColor = System.Drawing.Color.White;
+            this.comboAnimal.BorderColor = System.Drawing.Color.Silver;
+            this.comboAnimal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboAnimal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAnimal.FocusedColor = System.Drawing.Color.Empty;
+            this.comboAnimal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboAnimal.ForeColor = System.Drawing.Color.Black;
+            this.comboAnimal.FormattingEnabled = true;
+            this.comboAnimal.Location = new System.Drawing.Point(291, 49);
+            this.comboAnimal.Name = "comboAnimal";
+            this.comboAnimal.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.comboAnimal.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.comboAnimal.Size = new System.Drawing.Size(160, 26);
+            this.comboAnimal.TabIndex = 14;
             // 
             // AñadirTratamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.gunaPictureBox1);
+            this.Controls.Add(this.comboAnimal);
+            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.picReturn);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btnCargarDatos);
             this.Controls.Add(this.lblPrecio);
@@ -240,11 +274,10 @@
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombreTratamiento);
-            this.Controls.Add(this.txtMascota);
             this.Controls.Add(this.txtDni);
             this.Name = "AñadirTratamiento";
             this.Size = new System.Drawing.Size(650, 410);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +286,6 @@
         #endregion
 
         private Guna.UI.WinForms.GunaTextBox txtDni;
-        private Guna.UI.WinForms.GunaTextBox txtMascota;
         private Guna.UI.WinForms.GunaTextBox txtNombreTratamiento;
         private Guna.UI.WinForms.GunaTextBox txtDescripcion;
         private Guna.UI.WinForms.GunaTextBox txtPrecio;
@@ -264,6 +296,8 @@
         private Guna.UI.WinForms.GunaLabel lblPrecio;
         private Guna.UI.WinForms.GunaButton btnCargarDatos;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox picReturn;
+        private Guna.UI.WinForms.GunaButton BtnBuscar;
+        private Guna.UI.WinForms.GunaComboBox comboAnimal;
     }
 }

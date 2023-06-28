@@ -110,5 +110,13 @@ namespace Veterinaria_Login.ControlMascotas
 
             //comboAnimal.SelectedIndex = -1;
         }
+
+        private void picReturn_Click(object sender, EventArgs e)
+        {
+            PanelControlMascotas controlMascotas = new PanelControlMascotas();
+            Control contenedor = this.Parent;
+            contenedor.Controls.Remove(this);
+            contenedor.Controls.Add(controlMascotas);
+        }
     }
 }
